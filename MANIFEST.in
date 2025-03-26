@@ -1,0 +1,11 @@
+include monthcalendar/monthcalendar.min.js
+include monthcalendar/monthcalendar.min.js.map
+include monthcalendar/async-*.js
+include monthcalendar/async-*.js.map
+include monthcalendar/*-shared.js
+include monthcalendar/*-shared.js.map
+include monthcalendar/metadata.json
+include monthcalendar/package-info.json
+include README.md
+include LICENSE
+include package.json

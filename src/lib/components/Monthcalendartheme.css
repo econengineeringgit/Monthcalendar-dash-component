@@ -1,0 +1,40 @@
+/* LIGHT THEME */
+.light-theme {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    /*border: 1px solid #444;*/
+}
+
+/* DARK THEME */
+.dark-theme {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    /*border: 1px solid #444;*/
+}
+
+/* Apply styles to the inner DatePicker */
+.dark-theme .react-datepicker {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    /*border: 1px solid #444;*/
+}
+
+/* Dark mode header */
+.dark-theme .react-datepicker__header {
+    background-color: #282c34 !important;
+    color: #ffffff !important;
+}
+
+/* Background color when hovering over month name */
+.react-datepicker__month-text:not([aria-disabled=true]):hover {
+  border-radius: 0.3rem;
+  background-color: #78C2AD;
+  color: rgb(0, 0, 0);
+}
+
+/* Background color when selected month name */
+.react-datepicker__month-text--keyboard-selected {
+  border-radius: 0.3rem;
+  background-color: #66A593;
+  color: rgb(0, 0, 0);
+}
