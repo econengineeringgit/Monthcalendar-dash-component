@@ -16,7 +16,7 @@ body = dbc.Container(
     style={"height": "100vh"}
 )
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
+app = Dash(__name__)
 app.layout = html.Div([body])
 
 @app.callback(

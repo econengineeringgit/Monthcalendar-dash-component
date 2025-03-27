@@ -1,22 +1,23 @@
 /* LIGHT THEME */
 .light-theme {
-    background-color: #ffffff !important;
     color: #000000 !important;
-    /*border: 1px solid #444;*/
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 /* DARK THEME */
 .dark-theme {
-    background-color: #212529 !important;
     color: #ffffff !important;
-    /*border: 1px solid #444;*/
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 /* Apply styles to the inner DatePicker */
 .dark-theme .react-datepicker {
     background-color: #212529 !important;
     color: #ffffff !important;
-    /*border: 1px solid #444;*/
 }
 
 /* Dark mode header */
@@ -37,4 +38,18 @@
   border-radius: 0.3rem;
   background-color: #66A593;
   color: rgb(0, 0, 0);
+}
+
+/* Force the width of the DatePicker input field */
+.react-datepicker-wrapper input {
+  width: 100px !important;
+  text-align: right;
+}
+
+.dark-theme .label {
+  color: #ffffff;
+}
+
+.light-theme .label {
+  color: #000000;
 }
