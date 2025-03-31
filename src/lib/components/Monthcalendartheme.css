@@ -2,16 +2,12 @@
 .light-theme {
     color: #000000 !important;
     display: flex;
-    gap: 30px;
-    align-items: center;
 }
 
 /* DARK THEME */
 .dark-theme {
     color: #ffffff !important;
     display: flex;
-    gap: 30px;
-    align-items: center;
 }
 
 /* Apply styles to the inner DatePicker */
@@ -44,12 +40,4 @@
 .react-datepicker-wrapper input {
   width: 100px !important;
   text-align: right;
-}
-
-.dark-theme .monthcalendar-label {
-  color: #ffffff;
-}
-
-.light-theme .monthcalendar-label {
-  color: #000000;
 }

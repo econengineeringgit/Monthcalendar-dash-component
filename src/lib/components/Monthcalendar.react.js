@@ -16,7 +16,6 @@ const Monthcalendar = (props) => {
 
     return (
         <div id={id} className={className}>
-            <p id='monthcalendar-label'>Select Month</p>
             <DatePicker
                 selected={startDate}
                 onChange={(date) => {
