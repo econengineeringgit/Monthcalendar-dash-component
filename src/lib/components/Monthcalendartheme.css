@@ -46,10 +46,10 @@
   text-align: right;
 }
 
-.dark-theme .label {
+.dark-theme .monthcalendar-label {
   color: #ffffff;
 }
 
-.light-theme .label {
+.light-theme .monthcalendar-label {
   color: #000000;
 }
