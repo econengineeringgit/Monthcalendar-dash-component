@@ -6,13 +6,16 @@ import './Monthcalendartheme.css';
 
 
 const Monthcalendar = (props) => {
-    const {id, selectedDate, className, setProps} = props;
+    const { id, selectedDate, className, setProps } = props;
 
-    const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState(selectedDate ? new Date(selectedDate) : new Date());
 
+    // Sync startDate with selectedDate prop when it changes
     useEffect(() => {
-        setProps({ selectedDate: startDate.toISOString() });
-    }, [startDate, setProps]);
+        if (selectedDate) {
+            setStartDate(new Date(selectedDate));
+        }
+    }, [selectedDate]);
 
     return (
         <div id={id} className={className}>
@@ -27,15 +30,17 @@ const Monthcalendar = (props) => {
             />
         </div>
     );
-}
+};
 
-Monthcalendar.defaultProps = {};
+Monthcalendar.defaultProps = {
+    selectedDate: null,
+};
 
 Monthcalendar.propTypes = {
     id: PropTypes.string,
     selectedDate: PropTypes.string,
     className: PropTypes.string,
-    setProps: PropTypes.func
+    setProps: PropTypes.func,
 };
 
 export default Monthcalendar;
